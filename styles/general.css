@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+    --colorBlanco: #FFF;
+    --colorBordo: #9f3647;
+    --colorGrisOscuro: #171717;
+    --colorNegro: #000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1rem;
+}
+
+body {
+    width: 100%;
+    height: auto;
+}
+
+.barra_de_navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--colorBordo);
+    padding: 1.5rem 3rem;
+}
+
+.logo_de_navegacion {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+
+.logo_de_navegacion .bi {
+    font-size: 1.5rem;
+} 
+.logo_de_navegacion span {
+    display: block;
+    margin-top: 0.3rem;
+    font-size: 1.24rem;
+}
+
+.menu_de_opciones {
+    display: block;
+    margin: 0 auto;
+    list-style: none;
+    padding-top: 1.4rem;
+    text-align: center;
+}
+
+.menu_de_opciones li {
+    margin-top: 1.2rem;
+}
+
+.menu_de_opciones li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    padding: 0.5rem 0.6rem;
+}
+
+.btn_negro{
+    background-color: black;
+    padding: 0.5rem 0.6rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.menu_de_opciones li a:hover , .menu_de_opciones li .btn_negro:hover {
+    background-color: transparent;
+    box-shadow: 0 0 7px #191919;
+}
+
+.presentacion {
+    height: 20%;
+    background: url(../assets/img/1fbcdeb2de83e119495eb3472a1f54d3.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.presentacion__informacion{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: var(--colorBlanco);
+    padding: 2.5rem;
+
+}
+
+.presentacion__informacion h1 {
+    font-size: 2.7rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.presentacion__informacion span {
+    font-size: 1.3rem;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.presentacion__informacion a {
+    text-decoration: none;
+    color: var(--colorBlanco);
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: var(--colorBordo);
+}
+
+main {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background-color: var(--colorGrisOscuro);
+}
+
+.seccion_buscador {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    padding: 3.5rem 2.5rem;
+    
+}
+
+.seccion_buscador h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--colorBlanco);
+    padding-bottom: 1.5rem;
+}
+
+.contenedor_buscador {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.contenedor_barra {
+    display: inline;
+    width: 80%;
+}
+
+.barra_buscador {
+    width: 70%;
+    border-radius: 1.5rem;
+    padding: 0.5rem 1.4rem;
+}
+
+.btn_busqueda {
+    border-radius: 2rem;
+    padding: 0.5rem 0.8rem;
+}
+
+.btn_bordo_blanco {
+    background: var(--colorBordo);
+    color: var(--colorBlanco);
+    border: 2px solid var(--colorBlanco);
+}
+
+
+.barra_buscador:focus, .barra_buscador:active {
+    outline: none;
+}
+
+.seccion_tendencias {
+    width: 90%;
+    border-top: 2px solid var(--colorBordo);
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion_tendencias .contenedor_peliculas {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.titulo_seccion{
+    text-align: center;
+    font-size: 2.2rem;
+    padding-bottom: 1.5rem;
+    color: var(--colorBlanco);
+}
+
+.contenedor_img {
+    width: 10rem;
+    height: 14rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.imagenes {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.seccion_tendencias .contenedor_botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0rem;
+    
+}
+
+.btn_atras, .btn_adelante {
+    padding: 0.7rem;
+}
+
+
+.seccion_peliculas_aclamadas {
+    width: 90%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid var(--colorBordo);
+}
+
+.listado_peliculas {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    scrollbar-color: var(--colorBordo) var(--colorGrisOscuro);
+}
+
+.contenedor_scroll {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.listado_peliculas .contenedor_scroll .contenedor_img {
+    width: 9rem;
+    height: 13rem;
+    margin-right: 1rem;
+}
+
+footer {
+    height: 20%;
+    background-color: var(--colorBordo);
+    padding: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+footer a{
+    text-align: center;
+    color: var(--colorBlanco);
+    text-decoration: none;
+    padding: 0.5rem 0;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.boton_inicio {
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 0.5rem 0.9rem;
+    border-radius: 50%;
+    text-align: center;
+    background-color: transparent;
+    border: 3.5px solid var(--colorNegro);
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--colorNegro);
+}
+
+/* Media Queries*/
+
+@media screen and (min-width: 280px) {
+    .contenedor_img {
+        width: 13rem;
+    }
+
+    .btn_atras {
+        margin-right: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 300px) {
+    .contenedor_img {
+        width: 14rem;
+        height: 19rem;
+    }
+
+    .listado_peliculas .contenedor_scroll .contenedor_img {
+        width: 10rem;
+        height: 17rem;
+    }
+}
+
+
+
+@media screen and (min-width: 650px) {
+    .barra_de_navegacion{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu_de_opciones {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 0rem;
+        margin: 0;
+    }
+
+    .menu_de_opciones li {
+        margin-top: 0;
+        margin-left: 1.2rem;
+    }
+
+
+    .logo_de_navegacion span {
+        display: inline;
+        margin-top: 0rem;
+        margin-left: 0.3rem;
+        font-size: 1.24rem;
+    }
+
+    .presentacion {
+        height: 60vh;
+    }
+
+    .contenedor_img {
+        width: 16rem;
+        height: 23rem;
+    }
+
+    .listado_peliculas .contenedor_scroll .contenedor_img {
+        width: 12rem;
+        height: 19rem;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    footer {
+        padding: 1rem 10rem;
+        height: 20%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .presentacion {
+        height: 70vh;
+    }
+}
+
